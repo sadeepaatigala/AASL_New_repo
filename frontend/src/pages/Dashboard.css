@@ -1,0 +1,104 @@
+/* Dashboard.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f4f6;
+  
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  min-height: 100vh;
+  background-image: url('../10380264_713734275377167_3637431274593138582_o.jpg'); /* Local image or URL */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Optional: makes the image scroll with the page */
+}
+
+
+/* Dashboard Main Content */
+.dashboard-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+/* Left Section */
+.left-section {
+  width: 40%; /* Adjust the width to fit your layout */
+  background-color: #edf2f7bd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Section */
+.right-section {
+  width: 70%; /* Ensure this percentage adds up correctly with the left section */
+  background-color: #ffffffd7;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-section h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dashboard-button {
+  padding: 12px 20px;
+  background-color: #1a202c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-button:hover {
+  background-color: #d4d4d4;
+  color: #1a202c;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .dashboard-main {
+    flex-direction: column;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

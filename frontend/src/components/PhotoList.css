@@ -1,0 +1,39 @@
+/* Basic grid styling for photo preview */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.photo-item {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.photo-preview {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.photo-info {
+  margin-top: 10px;
+}
+
+.photo-actions button {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.photo-actions button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.photo-actions button:focus {
+  outline: none;
+}

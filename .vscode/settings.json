@@ -1,0 +1,3 @@
+{
+    "dotnet.defaultSolution": "FileSharingService\\FileSharing\\FileSharing.sln"
+}

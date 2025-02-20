@@ -1,0 +1,139 @@
+/* Main container styling for media display */
+.media-display-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  
+}
+
+/* Header styling */
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+  
+}
+
+/* Search bar input styling */
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Folder container for media items */
+.media-folder-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Grid container for images/videos */
+.media-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+/* Individual media item styling with fixed size */
+.media-item-container {
+  width: 150px;   /* Set a fixed width */
+  height: 200px;  /* Set a fixed height */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.media-item-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Thumbnail container with fixed media size */
+.media-thumbnail-container {
+  width: 100%;
+  height: 150px;  /* Fixed height for media */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.media-icon-container img,
+.media-icon-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensures the media fits the container without stretching */
+  border-radius: 5px;
+}
+
+/* Media item filename styling */
+.media-item-filename {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Edit input box for filenames */
+.filename-input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Action buttons (edit/delete) */
+.media-item-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button,
+.save-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+}
+
+.edit-button {
+  background-color: #4caf50;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.save-button {
+  background-color: #4caf50;
+}
+
+.edit-button:hover {
+  background-color: #388e3c;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.save-button:hover {
+  background-color: #388e3c;
+}

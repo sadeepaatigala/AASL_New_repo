@@ -1,0 +1,79 @@
+.add-user-container {
+    width: 300px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements horizontally */
+}
+
+.add-user-container h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Center the title */
+}
+
+.add-user-container form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center; /* Center form elements */
+}
+
+.add-user-container input {
+    width: 90%; /* Increased width to make inputs larger */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Bigger text */
+}
+
+.add-user-container input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.add-user-container button {
+    width: 90%; /* Match button width with inputs */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.add-user-container button:hover {
+    background-color: #0056b3;
+}
+
+.add-user-container button:active {
+    background-color: #004999; /* Slightly darker on click */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .add-user-container {
+        width: 95%; /* More width on small screens */
+    }
+}

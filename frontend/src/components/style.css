@@ -1,0 +1,26 @@
+/* style.css */
+
+.photo-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .photo-item {
+    display: flex; /* Align items in a row */
+    align-items: left; /* Center items vertically */
+    margin-bottom: 10px; /* Space between items */
+  }
+  
+  .photo-thumbnail {
+    width: 20px; /* Small size for the image */
+    height: 20px; /* Keep aspect ratio */
+    margin-right: 10px; /* Space between the image and text */
+  }
+  
+  .photo-name {
+    font-size: 14px; /* Set font size */
+    color: #333; /* Optional: change text color */
+  }
+  
